@@ -46,7 +46,7 @@ let searchMusic = 'https://itunes.apple.com/search?term='; //iTunes API
 	          let album = data.results[i].collectionName;
 	          let art = data.results[i].artworkUrl100;
 	          let artist = data.results[i].artistName;
-	          let preivew = data.results[i].previewUrl;
+	          let sample = data.results[i].previewUrl;
 	          let musicBoxes = document.createElement('div');
 	          musicBoxes.setAttribute("class", "box");
 
@@ -58,30 +58,28 @@ let searchMusic = 'https://itunes.apple.com/search?term='; //iTunes API
 	          `
 
 
-	          musicBoxes.innerHTML = display
-	          let box = document.querySelector(".search-results");
-	          box.appendChild(musicBoxes);
-	          let clickPic = musicBoxes.querySelector(".albumThumb");
-	          clickPic.addEventListener('click', function(event){
-	            let getMusic = document.getElementById('audio-player');
-	            getMusic.innerHTML = `<audio controls autoplay><source src = "${preview}" type = "audio/wav"></audio>`
-	          })
+            musicBoxes.innerHTML = display
+            let box = document.querySelector(".search-results");
+            box.appendChild(musicBoxes);
+            let clickPic = musicBoxes.querySelector(".albumThumb");
+            clickPic.addEventListener('click', function(event){
+            	let getMusic = document.getElementById('music-player');
+            	getMusic.innerHTML = `<audio controls autoplay><source src = "${sample}" type = "audio/wav"></audio>`
+            })
 
 
 
 
-	        }
+          }
 
 
 	      })
 
 
 	    }
-	  )
-
+    )
 
 	})
-
 
 
 
