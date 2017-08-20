@@ -1,4 +1,52 @@
 body {
-  background-color: #60d9f1;
+  /*background-color: #60d9f1;*/
   font-family: sans-serif;
+  align-content: center;
+  background-image: url(/Users/jerusmacbook/Documents/Projects/itunes_music_search/images/thumb-crowd.jpg);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+#music-player {
+  display: flex;
+  justify-content: center;
+}
+
+.search-results {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.box {
+  height: 240px;
+  width: 240px;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  background: transparent;
+  overflow: auto;
+}
+
+
+.box img {
+  border-radius: 2%;
+}
+
+.artistTitle {
+  font-weight: bold;
 }
