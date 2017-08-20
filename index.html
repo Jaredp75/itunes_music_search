@@ -6,15 +6,22 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>Really Awesome Music Site</h1>
-    </header>
+    <div class="header">
+      <div class="title">
+        <header>
+          <h1>iTunes Music Search</h1>
+        </header>
+      </div>
+    </div>
+  </div>
+  <section>
     <section class="player">
       <audio class="music-player" controls="controls" src=""></audio>
     </section>
     <section class="search">
       <form class="search-form">
-        
+        <input type = 'text' name = 'search-music' class = 'search-music' placeholder = "Search">
+        <input type = 'submit' name = search-button' class = 'search-button'>
       </form>
     </section>
     <section class="results"></section>
