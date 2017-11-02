@@ -3,22 +3,20 @@
 <head>
   <title>iTunes Music Search</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Saira+Semi+Condensed" rel="stylesheet">
   <script src="https://use.fontawesome.com/ffa41e3f0d.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="header">
       <div class="title">
-        <header>
-          <h1>iTunes Music Search</h1>
-        </header>
+          <h1>TuneIn</h1>
+          <h2>iTunes Music Search</h2>
       </div>
-    </div>
-  </div>
-  <div class="info">
+      <div class="info">
           <div class="info-content">
           <p class="quote"><em>Listen to your favorite artists!</em><p>
-          <p>Social Media</p>
+          <p>Follow us on Social Media</p>
             <div class='social-info'>
               <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
               <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
@@ -26,27 +24,22 @@
               <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
             </div>
           </div>
-        </div>
-  <section>
-    <section>
-      <div id='music-player'>
-        <audio controls></audio>
       </div>
-    </section>
-    <br>
-    <section class="search">
-      <form class="search-form">
-        <input type = 'text' name = 'search-music' class = 'search-music' placeholder = "Search">
-        <input type = 'submit' name = 'search-button' class = 'search-button'>
+    </div>
+  </div>
+
+      <form class="search">
+        <input type = 'text' name = 'search-music' class = 'search-music' placeholder = "Search for an artist">
+        <input type = 'submit' name = 'search-button' class = 'search-button' value = '&#10004'>
       </form>
-    </section>
-    <br>
-    <hr>
-    <section>
-      <div>
-        <div class = 'search-results'>
+      <div id='music-player'>
+        <!-- this will start off the page with an empty audio player -->
+        <audio controls></audio>
+        <!--audio player appended here-->
       </div>
-    </section>
+        <div class = 'search-results'>
+        <!--results will be appended here-->
+    </div>
 
 
 

@@ -1,5 +1,6 @@
 body {
-  background-image: url('/Users/jerusmacbook/Documents/Projects/itunes_music_search/images/thumb-crowd.jpg');
+  /*background-image: url('/Users/jerusmacbook/Documents/Projects/itunes_music_search/images/thumb-crowd.jpg');*/
+  background-image: url('images/piano-keys.jpg');
   margin: 0;
 }
 
@@ -15,18 +16,22 @@ body {
   width: 30%;
   height: 310px;
   margin-right: 5%;
-  bacground-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.50);
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Saira Semi Condensed', sans-serif;
   font-size: 1.5em;
+}
+
+.title h1 {
+  color: #416bf4;
 }
 
 /*information box*/
 .info {
   width: 65%;
   height: 310px;
-  background-color: rgba(255, 255, 255, 0.85);
-  font-family: sans-serif;
+  background-color: rgba(255, 255, 255, 0.50);
+  font-family: 'Raleway', sans-serif;
   font-size: 1.7em;
   text-align: center;
 }
@@ -38,7 +43,7 @@ body {
 }
 
 .social-info a {
-  color: #E50D84;
+  color: #416bf4;
 }
 
 .social-info a:hover{
@@ -51,35 +56,53 @@ body {
   padding-top: 8%;
 }
 
-
-
-
-
-h1 {
-  text-align: center;
-  font-style: italic;
-  font-size: 50px;
-
-}
-
-
-
-
-
-
-#music-player {
+/*entire header(logo and info box)*/
+.header{
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5%;
+
 }
 
-.search {
-  display: flex;
-  justify-content: center;
+/*search box styles*/
+.search{
+  background-color: rgba(255, 255, 255, 0.50);
+  margin-bottom: 5%;
 }
 
 
+/*search bar text input styling*/
+.search-music{
+  width: 85%;
+  height:25px;
+  background:none;
+  border: none;
+  border-bottom: 1px solid black;
+  margin:  3%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  outline:none;
+}
 
+/*search button styling*/
+.search-button{
+  border: none;
+  border-radius: 15%;
+  background-color: #E50D84;
+  color: rgba(255, 255, 255, 0.50);
+  font-family: 'Raleway', sans-serif;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
 
+.search-button:hover{
+  background-color: black;
+}
+
+/*organizes layout for search result boxes*/
 .search-results {
   display: flex;
   justify-content: space-between;
@@ -88,13 +111,62 @@ h1 {
 }
 
 .search-button {
-  background-color: lightgrey;
+  background-color: #416bf4;
+}
+
+
+/*stying for each song box*/
+.box {
+  height: 220px;
+  width: 220px;
+  padding: 5px;
+  margin-bottom: 5%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.50);
+  overflow:auto;
+}
+
+.box img {
+  border-radius: 15%;
+}
+
+/*styling for text in song boxes*/
+.artistTitle{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: #E50D84;
+  padding: 0 .9px;
+}
+
+.artistTrack{
+  font-family: 'Raleway', sans-serif;
+  padding: 0 .9px;
 }
 
 
 
 
-.box {
+#music-player {
+  background-color: rgba(255, 255, 255, 0.50);
+  margin-bottom: 5%;
+  padding: 30px;
+  height:30px;
+}
+
+#music-player audio {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*.box {
   height: 240px;
   width: 240px;
   padding: 5px;
@@ -114,4 +186,4 @@ h1 {
 
 .artistTrack {
   font-weight: bold;
-}
+}*/
