@@ -1,13 +1,59 @@
 body {
-  /*background-color: #60d9f1;*/
-  font-family: sans-serif;
-  align-content: center;
   background-image: url('/Users/jerusmacbook/Documents/Projects/itunes_music_search/images/thumb-crowd.jpg');
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0;
 }
+
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 5% 10%;
+  background-color: transparent;
+}
+
+.title {
+  width: 30%;
+  height: 310px;
+  margin-right: 5%;
+  bacground-color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.5em;
+}
+
+/*information box*/
+.info {
+  width: 65%;
+  height: 310px;
+  background-color: rgba(255, 255, 255, 0.85);
+  font-family: sans-serif;
+  font-size: 1.7em;
+  text-align: center;
+}
+/*social icons*/
+.social-info{
+  display: flex;
+  padding: 0 20%;
+  justify-content: space-around;
+}
+
+.social-info a {
+  color: #E50D84;
+}
+
+.social-info a:hover{
+  color:black;
+}
+
+
+/*spaces out text and social icons*/
+.info-content{
+  padding-top: 8%;
+}
+
+
+
+
 
 h1 {
   text-align: center;
